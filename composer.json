@@ -1,0 +1,40 @@
+{
+    "name": "mschlosser22/csv-form-pull",
+    "description": "Plugin to pull csv reports from form DB",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "csv form pull"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Schlosser",
+            "homepage": "https://github.com/mschlosser22"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "phpmailer/phpmailer": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "mschlosser22\\csvformpull\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "CSV Form Pull",
+        "handle": "csv-form-pull",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/CSV Form Pull/csv-form-pull/master/CHANGELOG.md",
+        "components": {
+            "csvFormPullService": "mschlosser22\\csvformpull\\services\\CsvFormPullService"
+        },
+        "class": "mschlosser22\\csvformpull\\CsvFormPull"
+    }
+}
